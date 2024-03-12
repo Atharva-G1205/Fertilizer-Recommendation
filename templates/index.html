@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation System</title>
+    <style>
+
+        @font-face {
+            font-family: 'COMFORTAA'; /* Choose a unique name for your font */
+            src: url('../COMFORTAA.ttf') format('ttf');
+        }
+
+
+        body {
+            font-family: 'COMFORTAA', Arial, sans-serif;
+            background-image: url(farm.jpg);
+            /* background: rgb(8,198,14); */
+            /* background: radial-gradient(circle, rgba(8,198,14,0.829656862745098) 29%, rgba(13,182,2,0.7456232492997199) 55%, rgba(18,186,15,0.7204131652661064) 75%); */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent background image from repeating */
+        }
+
+        h1 {font-family: 'COMFORTAA';
+            font-size: 55px;
+            color: #724e18;
+            text-align: center;
+            text-shadow: 1px 1px 2px grey;
+            
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+            display: flex; /* Use Flexbox */
+            flex-direction: column; /* Arrange elements in a column */
+            align-items: center; /* Center horizontally */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #228b22;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'COMFORTAA', Arial, Helvetica, sans-serif;
+        }
+        input[type="submit"]:hover {
+            background-color: #1c7a1c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Your Parameters:</h1>
+    <form method="POST" action="predict">
+        <label for="temperature">Temperature:</label>
+        <input type="number" name="temperature" required><br>
+        <label for="humidity">Humidity:</label>
+        <input type="number" name="humidity" required><br>
+        <label for="moisture">Moisture:</label>
+        <input type="number" name="moisture" required><br>
+        <label for="soil_type">Soil Type:</label>
+        <input type="text" name="soil_type" required><br>
+        <label for="crop_type">Crop Type:</label>
+        <input type="text" name="crop_type" required><br>
+        <label for="N">N Value:</label>
+        <input type="number" name="P" required><br>
+        <label for="K">K Value:</label>
+        <input type="number" name="N" required><br>
+        <label for="P">P Value:</label>
+        <input type="number" name="K" required><br>
+        <input type="submit" value="Get Recommendation">
+    </form>
+</body>
+</html>
