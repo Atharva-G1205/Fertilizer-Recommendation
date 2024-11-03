@@ -12,5 +12,7 @@ Seaborn
 Flask
 HTML, CSS
 
+Dataset (Fertiliser Prediction.csv) obtained from kaggle
+
 To run the application, first run the prediction.py file to generate the pickle file, then run app.py to run the application and click the generated link to launch the interface
 
