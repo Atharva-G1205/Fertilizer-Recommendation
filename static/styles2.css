@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: 'COMFORTAA';
+    src: url('COMFORTAA.ttf') format('ttf');
+}
+
+body {
+    background-image: url(farm.jpg);
+    font-family: 'COMFORTAA', Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'COMFORTAA';
+    color: rgb(124, 92, 49);
+    text-align: center;
+}
+
+/* Styling for the content box */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around content */
+    margin: 0 auto; /* Center the box horizontally */
+    max-width: calc(100% - 200px); /* Limit width of the box */
+}
+
+p {
+    font-family: 'COMFORTAA';
+    color: rgb(81, 255, 0);
+    text-align: center;
+}
