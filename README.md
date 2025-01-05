@@ -8,4 +8,4 @@ Dataset (Fertilizer Prediction.csv) obtained from kaggle
 
 To run the application, first run the prediction.py file to generate the pickle file which contains the trained model, then run app.py to run the application and click the generated link to launch the interface
 
-Created by Atharva Ghongade, Abhijeet Khole, Abhishek Chaudhari, Bhushan Raut and Piyush Kurwade (Pune Institute of Computer Technology)
+Created by Atharva Ghongade, Abhijit Khole, Abhishek Chaudhari, Bhushan Raut and Piyush Kurwade (Pune Institute of Computer Technology)
